@@ -2,9 +2,3 @@ people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darnell',
 
 #Your code here:
 
-list = []
-
-def filter():
-    for i in people:
-        print people.index
-filter()
