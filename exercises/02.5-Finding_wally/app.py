@@ -2,9 +2,17 @@ people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darnell',
 
 #Your code here:
 
-list = []
+elemento = "Wally"  # elemento a buscar
 
-def filter():
-    for i in people:
-        print people.index
-filter()
+posiciones = []  # nuestra lista para guardar las posiciones
+posicion = -1  # empezaremos a buscar en posicion + 1 (que es 0 inicialmente)
+
+try:
+    while True:
+        # buscamos empezando a buscar desde la última posición encontrada
+        posicion = people.index(elemento, posicion + 1)
+        posiciones.append(posicion)
+except:
+    pass  # no hacemos nada si index lanza ValueError
+
+print(posiciones)
